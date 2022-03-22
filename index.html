@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta favicon="favicon.ico">
+    <meta name="description" content="Desenvolvido por Juanfariasdev">
+    <meta name="description" content="Jokenpô feito por Juan Pablo Farias">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpô</title>
+</head>
+
+<body>
+    <h1>
+        <span class="goldColor">Jo</span><span class="redColor">ken</span><span class="blueColor">pô</span>
+    </h1>
+    <div class="game">
+
+        <header>
+            <div>
+                <span id="pontuacaoUser">0</span>
+                <p>Você</p>
+            </div>
+            <span class="versus goldColor">X</span>
+            <div>
+                <span id="pontuacaoPC">0</span>
+                <p>Sapinho</p>
+            </div>
+        </header>
+        <main>
+            <div id="resultDisplay" class="result" style="display: none;">
+                <div class="computer-result">
+                    <img id="computadorSelecao" alt="Resultado do computador">
+                </div>
+                <div class="user-result">
+                    <img id="userSelecao" alt="Resultado do Usuario">
+                </div>
+            </div>
+
+            <div id="letsPlay">
+                VAMOS JOGAR?
+            </div>
+        </main>
+        <h3 id="resultado" style="display:none">Você ganhou essa</h3>
+        <footer class="footer">
+            <span>Escolha uma opção</span>
+            <div class="opcoes">
+                <button id="rock" onclick="play(this.id)">
+                    <img src="./img/opcoes/pedra.png" alt="Pedra">
+                    <span>pedra</span>
+                </button>
+                <button id="paper" onclick="play(this.id)">
+                    <img src="./img/opcoes/papel.webp" alt="Pedra">
+                    <span>Papel</span>
+                </button>
+                <button id="scissors" onclick="play(this.id)">
+                    <img src="./img/opcoes/tesoura.webp" alt="Pedra">
+                    <span>Tesoura</span>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+
+    <div id="flutuante">
+        <p class="description">Resetar</p>
+        <button onclick="resetar()">
+            <img src="./img/reset.png" />
+        </button>
+    </div>
+    <div id="sapo-flutuante">
+        <img class="person"" src=" ./img/persons/sapo.webp" />
+        <img class="personIcon" src=" ./img/persons/icon_sapo.png" />
+        <p class="description" id="textAdverssario">Vamos começar hehe!</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
